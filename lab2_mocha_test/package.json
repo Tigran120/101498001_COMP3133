@@ -1,0 +1,16 @@
+{
+  "name": "lab2-mocha-test",
+  "version": "1.0.0",
+  "description": "Lab02 - Unit testing with Mocha and Chai",
+  "main": "app/calculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": ["mocha", "chai", "unit-testing"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
