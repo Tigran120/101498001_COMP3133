@@ -1,0 +1,17 @@
+{
+  "name": "lab3_restaurant_database",
+  "version": "1.0.0",
+  "description": "COMP 3133 Lab 03 - MongoDB & Mongoose REST API for Restaurants",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["express", "mongoose", "mongodb", "rest-api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}

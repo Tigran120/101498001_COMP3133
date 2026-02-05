@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "Lab 03 - Restaurant REST API",
+    "description": "COMP 3133 Lab 03 - MongoDB & Mongoose. Base URL: http://localhost:3000",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. All restaurants (all columns)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants"]
+        },
+        "description": "Returns all restaurant details - all columns."
+      }
+    },
+    {
+      "name": "2. All restaurants - sortBy ASC",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants?sortBy=ASC",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants"],
+          "query": [
+            { "key": "sortBy", "value": "ASC" }
+          ]
+        },
+        "description": "Selected columns (id, cuisines, name, city, restaurant_id), sorted by restaurant_id ascending."
+      }
+    },
+    {
+      "name": "3. All restaurants - sortBy DESC",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants?sortBy=DESC",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants"],
+          "query": [
+            { "key": "sortBy", "value": "DESC" }
+          ]
+        },
+        "description": "Selected columns, sorted by restaurant_id descending."
+      }
+    },
+    {
+      "name": "4. By cuisine - Japanese",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants/cuisine/Japanese",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants", "cuisine", "Japanese"]
+        },
+        "description": "All restaurant details where cuisine is Japanese."
+      }
+    },
+    {
+      "name": "5. By cuisine - Bakery",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants/cuisine/Bakery",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants", "cuisine", "Bakery"]
+        },
+        "description": "All restaurant details where cuisine is Bakery."
+      }
+    },
+    {
+      "name": "6. By cuisine - Italian",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants/cuisine/Italian",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants", "cuisine", "Italian"]
+        },
+        "description": "All restaurant details where cuisine is Italian."
+      }
+    },
+    {
+      "name": "7. Delicatessen (city not Brooklyn)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants/Delicatessen",
+          "host": ["{{baseUrl}}"],
+          "path": ["restaurants", "Delicatessen"]
+        },
+        "description": "Cuisine = Delicatessen, city ≠ Brooklyn. Columns: cuisines, name, city. Sorted by name ascending."
+      }
+    }
+  ]
+}
