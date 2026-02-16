@@ -1,0 +1,19 @@
+{
+  "name": "lab01-101498001-comp3133",
+  "version": "1.0.0",
+  "description": "Lab01 - Read CSV file using stream or fs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "csv",
+    "stream",
+    "fs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.0"
+  }
+}
