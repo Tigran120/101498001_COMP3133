@@ -4,7 +4,6 @@ Course assignments and labs (Node.js, Express, MongoDB, Mongoose).
 
 ## Labs
 
-- **Lab 01** – `Lab01_101498001_COMP3133`
 - **Lab 02** – `lab02_101498001_COMP3133`
 - **Lab 03** – `lab03_101498001_COMP3133` (Restaurant database)
 - **Lab 04** – `lab04_101498001_COMP3133/lab4_users_database` (Users API, POST /users)
