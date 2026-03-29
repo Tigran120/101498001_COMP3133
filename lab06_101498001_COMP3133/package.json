@@ -1,0 +1,19 @@
+{
+  "name": "lab06-typescript",
+  "version": "1.0.0",
+  "description": "COMP 3133 Lab 06 - TypeScript",
+  "private": true,
+  "scripts": {
+    "ex1:build": "cd exercise-1 && tsc",
+    "ex2:build": "cd exercise-2 && tsc",
+    "ex3:build": "cd exercise-3 && tsc",
+    "ex4:build": "cd exercise-4 && tsc",
+    "ex1:run": "cd exercise-1 && node hello-world.js",
+    "ex2:run": "cd exercise-2 && node customer.js",
+    "ex3:run": "cd exercise-3 && node customer.js",
+    "ex4:run": "cd exercise-4 && node main.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

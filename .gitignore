@@ -3,3 +3,15 @@ node_modules/
 *.zip
 .DS_Store
 *.log
+
+# Build / tool caches
+dist/
+.angular/
+
+# Temporary doc extraction (not part of coursework)
+lab06_docx_extract/
+lab07_docx_extract/
+lab08_docx_extract/
+lab06_text.txt
+lab07_text.txt
+lab08_text.txt
