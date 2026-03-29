@@ -1,0 +1,110 @@
+﻿COMP 3133 – Full Stack Development II
+Lab 
+0
+8
+ – 
+Angular
+ Data Binding &amp; Directives
+Topics:
+Angular Data Binding &amp; Directives
+Building Custom Pipes &amp; Directives
+Developer Note:
+When working on your exercises, please use the same Angular project from previous labs.  This way you way you won’t have to re-generate a new Angular application every lab. 
+Only submit the files components, typescript files that you have created and not the entire application.
+Exercise #1 – Directives and Data Binding
+* If you have not previously completed part one of Angular Tutorial, complete it first.
+https://angular.dev/tutorials/learn-angular
+ 
+Complete Part Two of Angular Tour of Hero’s Tutorial on Structural Directives and Data Binding.
+   
+https://angular.io/tutorial/toh-pt2
+Exercise #2 – Creating a Custom Pipe with Angular CLI
+Reference
+: 
+https://www.digitalocean.com/community/tutorials/a
+n
+gular-custom-pipes-angular
+ 
+Use the following 
+Angular CLI
+ command to generate a 
+Custom Pipe
+ named 
+remove-spaces
+Review the generated boiler plate code and navigate to the 
+app.module.ts
+ file and review the updated 
+import 
+statements and 
+@NgModule declarations
+ for the generated 
+remove-spaces Pipe
+.
+Update the 
+mock.heros.ts
+ file from Exercise #1.  Add the following list items to the array of Heros
+Write the code in the Custom Pipe to replace any occurrence of a dash ‘-‘ with an 
+empty spaces
+.
+Once completed apply it the hero name in the file 
+heros.component.html
+ to filter out the dashes in names
+Exercise #3 – Creating a Custom Directive with Angular CLI
+Reference
+:
+ 
+https://angular.dev/guide/directives
+ 
+https://medium.com/@krishsurya1249/angular-13-directives-and-custom-directives-86a226cbc26e
+ 
+ 
+https://adrianmejia.com/creating-custom-angularjs-directives-for-beginners/
+Use the following 
+Angular CLI
+ command to generate a 
+Custom Directive
+ named 
+inputFormat
+Create a 
+textbox input
+ element in the HTML markup that has the 
+input-format
+ Directive as an attribute.
+In the generated 
+input-
+format.directive.ts
+ file implement the 
+HostListener
+ interface and 
+ElementRef
+ class
+Implement the 
+HostListener
+ interface and add logic such that when the User clicks away from the  textbox (
+OnBlur
+ event) the textbox text will be converted to 
+UpperCase
+ text.
+Homework: Nested Components
+Complete Part Three of Angular Tour of Hero’s Tutorial on Nested Child Components.
+  
+https://angular.io/tutorial/toh-pt3
+Submission
+Screenshot(s)
+ 
+of
+ appropriate  output
+. You may add all the screenshots in word document and upload it
+. 
+[Do not put screenshots in project/zip file]
+.
+Create
+ 
+a zip file
+ 
+of your entire project folder and submit
+.
+Your 
+GitHub
+ 
+project link.

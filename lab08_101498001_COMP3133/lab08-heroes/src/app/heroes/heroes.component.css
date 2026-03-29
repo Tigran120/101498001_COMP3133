@@ -1,0 +1,54 @@
+.heroes {
+  margin: 0 0 2em;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.heroes li {
+  position: relative;
+  cursor: pointer;
+}
+
+.heroes li:hover {
+  left: 0.1em;
+}
+
+.heroes button {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  border: 1px solid #405061;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.heroes button:hover {
+  background-color: #cfd8dc;
+}
+
+.heroes button.selected {
+  background-color: #405061;
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.4em 0.6em;
+  background-color: #405061;
+  margin-right: 0.8em;
+  border-radius: 4px;
+}
+
+.lab-input {
+  margin-top: 2rem;
+}
+
+.lab-input input {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.5rem;
+}

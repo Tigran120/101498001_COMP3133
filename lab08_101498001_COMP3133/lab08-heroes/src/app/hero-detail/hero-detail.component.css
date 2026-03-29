@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #405061;
+  border-radius: 4px;
+  max-width: 20rem;
+}
+
+input {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}

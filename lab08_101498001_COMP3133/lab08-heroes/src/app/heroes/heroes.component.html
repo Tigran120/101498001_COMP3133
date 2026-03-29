@@ -1,0 +1,23 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button
+      type="button"
+      [class.selected]="hero === selectedHero"
+      (click)="selectedHero = hero"
+    >
+      <span class="badge">{{ hero.id }}</span>
+      {{ hero.name | removeSpaces }}
+    </button>
+  </li>
+</ul>
+
+<app-hero-detail *ngIf="selectedHero" [hero]="selectedHero"></app-hero-detail>
+
+<section class="lab-input">
+  <h3>Custom directive (blur → UPPERCASE)</h3>
+  <label>
+    Type and tab away:
+    <input type="text" input-format placeholder="try lowercase text" />
+  </label>
+</section>

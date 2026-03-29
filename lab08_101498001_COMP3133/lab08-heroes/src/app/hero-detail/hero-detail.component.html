@@ -1,0 +1,8 @@
+<div *ngIf="hero as h">
+  <h2>{{ h.name | removeSpaces }} Details</h2>
+  <div><span>id: </span>{{ h.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="h.name" placeholder="name" />
+  </div>
+</div>
